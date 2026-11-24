@@ -1,0 +1,299 @@
+﻿[
+  {
+    "id": "demo-001",
+    "prompt": "Quelle est la bonne réponse ?",
+    "image": "Greek.jpg",
+    "feedback": "Dites OUI à la vie !",
+    "answers": [
+      { "text": "Oui",       "correct": true  },
+      { "text": "Non",       "correct": false },
+      { "text": "Peut-être", "correct": false }
+    ]
+  },
+  {
+    "id": "demo-002",
+    "prompt": "Quelle est la couleur ?",
+    "image": "ColorsRender1.jpg",
+    "feedback": "lol",
+    "answers": [
+      { "text": "Rouge", "correct": false },
+      { "text": "Vert",  "correct": false },
+      { "text": "Bleu",  "correct": true  }
+    ]
+  },
+  {
+    "id": "demo-003",
+    "prompt": "Quelle est la forme ?",
+    "image": "Geom.jpg",
+    "feedback": "LA forme suggère celle qui est au centre.",
+    "answers": [
+      { "text": "Triangle", "correct": false },
+      { "text": "Rond",     "correct": true  },
+      { "text": "Carré",    "correct": false }
+    ]
+  },
+  {
+    "id": "e3d-equi-valider",
+    "prompt": "Pour créer un EQUI dans E3D, quel est le bouton pour valider la création d'un EQUIPMENT:",
+    "image": "AVAVA.jpg",
+    "feedback": "C'est évident !",
+    "answers": [
+      { "text": "Create", "correct": false },
+      { "text": "Ok",     "correct": true  },
+      { "text": "Apply",  "correct": false }
+    ]
+  },
+  {
+    "id": "aveva-mlp-classes",
+    "prompt": "Combien de classes content le datamodel d'AVEVA MLP ?",
+    "image": "AVAVA.jpg",
+    "feedback": "On a compté !",
+    "answers": [
+      { "text": "1740 et quelques", "correct": true  },
+      { "text": "577",              "correct": false },
+      { "text": "18540",            "correct": false }
+    ]
+  },
+  {
+    "id": "benedictus-createur",
+    "prompt": "Qui est à l'origine du phénomène mondial Benedictus.exe ?",
+    "image": "TheProfessionalYoupi.jpg",
+    "feedback": "Cordialement, bisoux.",
+    "answers": [
+      { "text": "The Profesional Youpi", "correct": true  },
+      { "text": "Mère Thérésa",          "correct": false },
+      { "text": "Danielle Pommier",      "correct": false }
+    ]
+  },
+  {
+    "id": "chaussette-premiere",
+    "prompt": "Quelle chaussette doit-on enfiler en premier ?",
+    "image": "ChausetteSale.jpg",
+    "feedback": "J'en sais rien, je t'en pose questions moi ?",
+    "answers": [
+      { "text": "La droite",  "correct": false },
+      { "text": "La gauche",  "correct": false },
+      { "text": "Ça dépend",  "correct": true  }
+    ]
+  },
+  {
+    "id": "alphabet",
+    "prompt": "abcdefghijklmnopqrstuvwxyz ?",
+    "image": "67.jpg",
+    "feedback": "Six-Seven !!",
+    "answers": [
+      { "text": "Oui",           "correct": false },
+      { "text": "Non",           "correct": false },
+      { "text": "Sgreugneugneu", "correct": true }
+    ]
+  },
+  {
+    "id": "astro-poisson",
+    "prompt": "Quelle est le signe Astrologique du poisson ?",
+    "image": "ChapeauPoisson.jpg",
+    "feedback": "C'était une question bonus !",
+    "answers": [
+      { "text": "Le poisson", "correct": true },
+      { "text": "Le poisson", "correct": true },
+      { "text": "Le poisson", "correct": true }
+    ]
+  },
+  {
+    "id": "ingenierie-principe-solide",
+    "prompt": "Quelle est le principe d'ingénierie le plus solide parmi ces examples ?",
+    "image": "HideThePain.jpg",
+    "feedback": "Les bons principes fuient ce questionnaire.",
+    "answers": [
+      { "text": "David Goodenough",       "correct": false },
+      { "text": "",                       "correct": true  },
+      { "text": "Les guignols de l'info", "correct": false }
+    ]
+  },
+  {
+    "id": "yalta-mer",
+    "prompt": "Au bord de quelle mer est située la station balnéaire de Yalta ?",
+    "image": "WorldMap.jpg",
+    "feedback": "Yalta est en Crimée, sur la mer Noire.",
+    "answers": [
+      { "text": "La mer des Caraïbes", "correct": false },
+      { "text": "La mer Noire",        "correct": true  },
+      { "text": "La mère à Benoït",    "correct": false }
+    ]
+  },
+  {
+    "id": "www-signification",
+    "prompt": "Que signifient les initiales WWW au début de la plupart des URL ?",
+    "image": "OverlyReactiveGirlfriend.jpg",
+    "feedback": "Le monde large et tissé",
+    "answers": [
+      { "text": "World Wide Web", "correct": true  },
+      { "text": "Wild Word Web",  "correct": false },
+      { "text": "Wouf Wouf Wouf", "correct": false }
+    ]
+  },
+  {
+    "id": "bug-insecte-code",
+    "prompt": "Comment appelle-t-on à la fois un petit insecte volant agaçant et une erreur perverse dans un bout de code ?",
+    "image": "Computers.jpg",
+    "feedback": "Aka j'ai apporté de l'anti-fourmis mais ça n'a pas suffit",
+    "answers": [
+      { "text": "Une fonctionnalité non documentée", "correct": false },
+      { "text": "Un bug",                            "correct": true  },
+      { "text": "Un stagiaire",                      "correct": false }
+    ]
+  },
+  {
+    "id": "linux-mascotte",
+    "prompt": "Quel adorable animal aquatique/polaire est l'emblème officiel de Linux ?",
+    "image": "DolphinNorthernerBusinessman.jpg",
+    "feedback": "Linus Torvalds a proposé un manchot heureux, sympa et au ventre rebondi plutôt que du corpo strict et agressif.",
+    "answers": [
+      { "text": "Un manchot",                      "correct": true  },
+      { "text": "Un requin enragé",                "correct": false },
+      { "text": "Un dauphin en costard-cravate",   "correct": false }
+    ]
+  },
+  {
+    "id": "pise-tour",
+    "prompt": "Dans quelle ville italienne se trouve la célèbre tour qui penche plus que ta motivation un lundi matin ?",
+    "image": "WorldMap.jpg",
+    "feedback": "Pour son sol aussi instable que ton mental et des fondations aussi profondes que ta réflexion.",
+    "answers": [
+      { "text": "Rome",   "correct": false },
+      { "text": "Venise", "correct": false },
+      { "text": "Pise",   "correct": true  }
+    ]
+  },
+  {
+    "id": "starwars-vador",
+    "prompt": "Dans Star Wars, quelle est la célèbre phrase choc que lance Dark Vador à Luke Skywalker ?",
+    "image": "DarkVadorFatherScene.jpg",
+    "feedback": "C'est son father, mais j'avoue t'as l'air d'avoir besoin d'un café.",
+    "answers": [
+      { "text": "\"Range ta chambre !\"",  "correct": false },
+      { "text": "\"Je suis ton père.\"",   "correct": true  },
+      { "text": "\"Tu veux un café ?\"",   "correct": false }
+    ]
+  },
+  {
+    "id": "git-correctif-urgent",
+    "prompt": "Dans le système de contrôle de version Git, quelle commande permet d'isoler un correctif urgent ?",
+    "image": "Computers.jpg",
+    "feedback": "On utilise généralement une branche dédiée créée à partir de la branche principale stable",
+    "answers": [
+      { "text": "git panic",  "correct": false },
+      { "text": "git oops",   "correct": false },
+      { "text": "git branch", "correct": true  }
+    ]
+  },
+  {
+    "id": "joconde-particularite",
+    "prompt": "Quelle particularité physique bien connue possède le célèbre tableau de La Joconde de Léonard de Vinci ?",
+    "image": "Louvre.jpg",
+    "feedback": "Après c'est vrai qu'il faut regarder la peinture, plus que les petites touristes",
+    "answers": [
+      { "text": "Elle n'a pas de sourcils",           "correct": true  },
+      { "text": "On voit sa culotte",                 "correct": false },
+      { "text": "Elle tire la langue discrètement",   "correct": false }
+    ]
+  },
+  {
+    "id": "poissons-soif",
+    "prompt": "Est-ce que les poissons ont soif ?",
+    "image": "PoissonCool.jpg",
+    "feedback": "Dans la mer ils avalent, dans l'eau douce elle est absorbée par osmose à travers la peau et branchies.",
+    "answers": [
+      { "text": "Seulement s'il n'y a pas d'eau", "correct": true  },
+      { "text": "Jamais",                         "correct": false },
+      { "text": "Sans whisky c'est improbable",   "correct": false }
+    ]
+  },
+  {
+    "id": "t bete",
+    "prompt": "Pourquoi t'es bête ?",
+    "image": "PoissonCool.jpg",
+    "feedback": "lol",
+    "answers": [
+      { "text": "Je sais pas",            "correct": true  },
+      { "text": "C'est pas vrai d'abord", "correct": true },
+      { "text": "Batard",                 "correct": false }
+    ]
+  },
+  {
+    "id": "tout noir",
+    "prompt": "Il va faire tout noir !",
+    "image": "Black.jpg",
+    "feedback": "Ref au film Grrr, quelqu'un previent toujours quand la nuit vient.",
+    "answers": [
+      { "text": "Tagueule.",           "correct": true },
+      { "text": "Quoi ?",             "correct": false },
+      { "text": "Espèce de raciste !",  "correct": false }
+    ]
+  },
+  {
+    "id": "frontiere-france",
+    "prompt": "Quel pays possède la plus longue frontière terrestre avec la France ?",
+    "image": "WorldMap.jpg",
+    "feedback": "Longue d'environ 730 km, située en Guyane française.",
+    "answers": [
+      { "text": "Le Brésil",  "correct": true  },
+      { "text": "L'Autriche", "correct": false },
+      { "text": "L'Espagne",  "correct": false }
+    ]
+  },
+  {
+    "id": "zero absolu",
+    "prompt": "Quelle est la valeur exacte en degC du zéro absolu ?",
+    "image": "Prof.jpg",
+    "feedback": "Ou zéro Kelvin",
+    "answers": [
+      { "text": "0 °C",         "correct": false },
+      { "text": "-273,15 °C",   "correct": true  },
+      { "text": "-272,13 °C",   "correct": false }
+    ]
+  },
+  {
+    "id": "dommage-hehe",
+    "prompt": "Vous perdez une vie durant ce tour.",
+    "image": "HideThePain.jpg",
+    "feedback": "Bouhouhahahhaaaa !!",
+    "answers": [
+      { "text": "Oui.",     "correct": false },
+      { "text": "Merci !",  "correct": false },
+      { "text": "Pitié ?",  "correct": false }
+    ]
+  },
+  {
+    "id": "proxima centauri",
+    "prompt": "A quelle distance se situe le système Proxima Centauri ?",
+    "image": "Prof.jpg",
+    "feedback": "Soit près de 40 000 milliards de kilomètres",
+    "answers": [
+      { "text": "4,25 années lumière",  "correct": true },
+      { "text": "2,75 années lumière",  "correct": false },
+      { "text": "5,15 années lumière",  "correct": false }
+    ]
+  },
+{
+    "id": "Pi",
+    "prompt": " π ?",
+    "image": "Pi.jpg",
+    "feedback": "Et π c'est tout",
+    "answers": [
+      { "text": "3,141592653589793",  "correct": false },
+      { "text": "3,14",               "correct": false },
+      { "text": "arccos(-1)",         "correct": true }
+    ]
+  },
+{
+    "id": "Mer Morte",
+    "prompt": "Quelle est la quantité de sel par litre d'eau dans la mer morte ?",
+    "image": "SelJamy.jpg",
+    "feedback": "Soit l'équivalent d'un demi-joueur de League Of Legends.",
+    "answers": [
+      { "text": "275 grammes",  "correct": true },
+      { "text": "165 grammes",  "correct": false },
+      { "text": "235 grammes",  "correct": false }
+    ]
+  }
+]

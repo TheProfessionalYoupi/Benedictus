@@ -16,7 +16,7 @@ Clear-Host
 # Variables générales
 $NAME = "Benedictus"
 $BUILD = "v2.0"
-$SONG = "$PSScriptRoot\Content\BenedictusSong.mp3"
+$SONG = "$PSScriptRoot\..\Content\BenedictusSong.mp3"
 
 # Bande originale du Saint-Editeur
 if (-not $global:player) { Add-Type -AssemblyName PresentationCore; $global:player = New-Object System.Windows.Media.MediaPlayer }; $global:player.Open($SONG); $global:player.Play()
@@ -46,19 +46,20 @@ Write-Host @"
  6. Ecran de la mort
  7. ___
 
- 0. Exhorciser "Benedictus"
- 9. Abandonner
+ 9. Exhorciser "Benedictus"
+ 0. Abandonner
 
+ Choisissez le n° de bénédiction souhaité :
 "@
-    $Go = Read-Host; if ([string]::IsNullOrWhiteSpace($Go)) { $Go = 1..9 | Get-Random }
+    $Go = Read-Host; if ([string]::IsNullOrWhiteSpace($Go)) { $Go = 1..3 | Get-Random }
     switch ($Go) {
-        '0' { Delivrance }
+        '9' { Delivrance }
         '1' { Mantra }
         '2' { Requiem }
         '3' { Idiot }
         '4' { Quizz }
         '6' { Blue }
-        '9' { Abord }
+        '0' { Abord }
         default {
             Error
         }
@@ -86,10 +87,9 @@ function Mantra {
 "@
 
     $Mantra = Read-Host "Entrez la commande a executer (cmd) [ex: start www.orinox.com/fr] :"
-    if ([string]::IsNullOrWhiteSpace($Mantra)) {
-        $Mantra = 1..6 | Get-Random
-    }
-    elseif ($Mantra -eq "1") {
+    if ([string]::IsNullOrWhiteSpace($Mantra)) { $Mantra = 1..6 | Get-Random }
+
+    if ($Mantra -eq "1") {
         $Action = "start www.kinder.com/fr/fr/kinder-surprise"
     }
     elseif ($Mantra -eq "2") {
@@ -135,7 +135,7 @@ function Blue {
         Error
     }
     
-    $Action = "$PSScriptRoot\Run\$Script"
+    $Action = "$PSScriptRoot\..\Run\$Script"
     $Execute = "powershell.exe"
     $Arg = "-NoProfile -ExecutionPolicy Bypass -NoExit -File `"$Action`""
     Send
@@ -175,7 +175,7 @@ function Requiem {
     else {
         Error
     }
-    $Action = "$PSScriptRoot\Run\InvisiblePlayer.ps1"
+    $Action = "$PSScriptRoot\..\Run\BenePlayer.ps1"
     $Execute = "powershell.exe"
     $Arg = "-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -NoExit -File `"$Action`" -Audio `"$Script`""
     Send
@@ -185,7 +185,7 @@ function Idiot {
     $Benediction = "You are an idiot!"
     $Script = "Idiot.ps1"
 
-    $Action = "$PSScriptRoot\Run\$Script"
+    $Action = "$PSScriptRoot\..\Run\$Script"
     $Execute = "powershell.exe"
     $Arg = "-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File `"$Action`""
     send
@@ -193,9 +193,9 @@ function Idiot {
 
 function Quizz {
     $Benediction = "Quizz"
-    $Script = "Quizz.ps1"
+    $Script = "BeneQuizz.ps1"
 
-    $Action = "$PSScriptRoot\Run\$Script"
+    $Action = "$PSScriptRoot\..\Run\$Script"
     $Execute = "powershell.exe"
     $Arg = "-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File `"$Action`""
     error
@@ -247,7 +247,7 @@ function Send {
         $command = New-ScheduledTaskAction `
             -Execute          $Execute `
             -Argument         $Arg `
-            -WorkingDirectory $PSScriptRoot
+            -WorkingDirectory $PSScriptRoot\..\
         # $command    = New-ScheduledTaskAction -Execute "cmd.exe" -Argument "/c `"$Action`""
         if ($Interval -eq 'Non') {
             $trigger   = New-ScheduledTaskTrigger -Once -At $When
@@ -296,7 +296,7 @@ function Delivrance {
         }
     }
 
-    $SONG = "$PSScriptRoot\Content\Hallelujah.mp3"; $global:player.Open($SONG); $global:player.Play()
+    $SONG = "$PSScriptRoot\..\Content\Hallelujah.mp3"; $global:player.Open($SONG); $global:player.Play()
     Start-Sleep -Seconds 10
     Close
 }
@@ -307,7 +307,7 @@ function Delivrance {
 
 function Jubilee {
 # $n = 1..9 | Get-Random 
-$SONG = "$PSScriptRoot\Content\OhYeah.mp3"; $global:player.Open($SONG); $global:player.Play()
+$SONG = "$PSScriptRoot\..\Content\OhYeah.mp3"; $global:player.Open($SONG); $global:player.Play()
 Write-Host @"
     
 
@@ -330,7 +330,7 @@ Close
 }
 
 function Abord {
-$SONG = "$PSScriptRoot\Content\Monkey.mp3"; $global:player.Open($SONG); $global:player.Play()
+$SONG = "$PSScriptRoot\..\Content\Monkey.mp3"; $global:player.Open($SONG); $global:player.Play()
 Write-Host @"
 
 
@@ -358,7 +358,7 @@ Close
 }
 
 function Error {
-$SONG = "$PSScriptRoot\Content\Demon.mp3"; $global:player.Open($SONG); $global:player.Play()
+$SONG = "$PSScriptRoot\..\Content\Demon.mp3"; $global:player.Open($SONG); $global:player.Play()
 Write-Host @"
 
 
